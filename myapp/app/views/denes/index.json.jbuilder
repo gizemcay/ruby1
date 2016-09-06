@@ -1,0 +1,1 @@
+json.array! @denes, partial: 'denes/dene', as: :dene

@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  isim: MyString
+  soyad: MyString
+  yas: 
+  düşünceler: MyText
+
+two:
+  isim: MyString
+  soyad: MyString
+  yas: 
+  düşünceler: MyText

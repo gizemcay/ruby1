@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Denes</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Isim</th>
+      <th>Soyad</th>
+      <th>Yas</th>
+      <th>Düşünceler</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @denes.each do |dene| %>
+      <tr>
+        <td><%= dene.isim %></td>
+        <td><%= dene.soyad %></td>
+        <td><%= dene.yas %></td>
+        <td><%= dene.düşünceler %></td>
+        <td><%= link_to 'Show', dene %></td>
+        <td><%= link_to 'Edit', edit_dene_path(dene) %></td>
+        <td><%= link_to 'Destroy', dene, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Dene', new_dene_path %>
